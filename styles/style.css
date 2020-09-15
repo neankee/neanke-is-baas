@@ -3,3 +3,41 @@
   box-sizing:border-box;  
 }
 
+body { 
+    background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+background-position: center;
+  background-color: beige;
+}
+
+header {
+     margin: 2em;
+    padding: 1em; 
+    background-color: white;
+}
+
+main {
+    margin: 2em;
+    padding: 1em; 
+    background-color: white;
+}
+
+footer {
+    margin: 2em;
+    padding: 1em; 
+    background-color: white;
+}
+
+ul {
+    display: flex;
+}
+
+li { 
+    display: block;
+margin: 1em;
+padding: 1em;
+text-transform: uppercase;
+color: green;}
+
