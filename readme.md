@@ -38,15 +38,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Goed: content in html zetten en styling in css
+Slecht: lay-out in css, repsonsive maken -
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+(images/img0443.png)(images/img0444.png)(images/img0445.png)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-lay-out, css, flexbox, responsive maken-
 
 ### Verslag van meeting
 
@@ -58,12 +59,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** -blauw-
 
-**Je focus:** -surface plane- -responsive-
+**Je focus:** -responsive-
 
-**Je opdracht:** -https://pets.byspotify.com/- -https://nl.pinterest.com/-
+**Je opdracht:** -https://www.barbotanique.nl/-
 
 
-**Screenshot(s):** (images/pin1.png)(images/pin2.png)(images/pin3.png)
+**Screenshot(s):** (images/img0438.png)(images/img0439.png)(images/img0440.png)(images/img0441.png)
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 

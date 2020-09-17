@@ -4,6 +4,8 @@
 }
 
 body { 
+   max-width:23em;
+    margin:auto;
     background-image: url(background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,14 +14,21 @@ background-position: center;
   background-color: beige;
 }
 
+div {
+        max-width: 19em;
+position: relative;
+    left: 2em;
+    right: 2em;
+    top: 2em;
+    bottom: 2em;
+}
+
 header {
-     margin: 2em;
     padding: 1em; 
     background-color: white;
 }
 
 main {
-    margin: 2em;
     padding: 1em; 
     background-color: white;
 }
@@ -30,14 +39,62 @@ footer {
     background-color: white;
 }
 
+nav {
+    
+}
+
 ul {
     display: flex;
 }
 
 li { 
     display: block;
-margin: 1em;
+margin: auto;
+    justify-content: center;
 padding: 1em;
 text-transform: uppercase;
 color: green;}
 
+
+img {
+    max-width:100%;
+}
+
+section {
+    margin-top: 1em;
+    border-style: solid;
+    border-color: pink;
+    padding: 1em;
+}
+
+article {
+  
+}
+
+h2 {
+    text-align:center;
+    color: green;
+}
+
+h3 {
+    text-align:center;
+    color: green;
+}
+
+p {
+    text-align:center;
+    color: green;
+}
+
+button {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    justify-content: center;
+    
+}
+
+.insta {
+    
+}
