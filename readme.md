@@ -38,16 +38,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--Goed: content in html zetten en styling in css
-Slecht: lay-out in css, repsonsive maken -
+Goed: content in html zetten en styling in css
+Slecht: lay-out in css, repsonsive maken
 
 **Screenshot(s):**
 
-(images/img0443.png)(images/img0444.png)(images/img0445.png)
+(images/img0443.png) (images/img0444.png) (images/img0445.png)
 
 ### Agenda voor meeting
 
--lay-out, css, flexbox, responsive maken-
+lay-out, css, flexbox, responsive maken
 
 ### Verslag van meeting
 
@@ -57,14 +57,14 @@ Slecht: lay-out in css, repsonsive maken -
 
 ## Intake (week 1)
 
-**Je startniveau:** -blauw-
+**Je startniveau:** blauw
 
-**Je focus:** -responsive-
+**Je focus:** responsive
 
-**Je opdracht:** -https://www.barbotanique.nl/-
+**Je opdracht:** https://www.barbotanique.nl/
 
 
-**Screenshot(s):** (images/img0438.png)(images/img0439.png)(images/img0440.png)(images/img0441.png)
+**Screenshot(s):** (images/img0438.png) (images/img0439.png) (images/img0440.png) (images/img0441.png)
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
