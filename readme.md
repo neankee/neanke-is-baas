@@ -30,7 +30,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Goed: content in html zetten en styling in css
+Slecht: lay-out in css, flexbox, responsive zoals met hamburger menu
+Deze weken niet veel tijd er aan kunnen besteden wegens drukte en ziekte, er moet veel ingehaald worden
+
+**Screenshot(s):**
+
+(images/img0443.png) (images/img0444.png) (images/img0445.png)
+
+### Agenda voor meeting
+
+css, flexbox, responsive maken
+
+### Verslag van meeting
+
+
 
 
 
@@ -51,7 +67,7 @@ lay-out, css, flexbox, responsive maken
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Website is responsive gemaakt. Nog uitvogelen met positioneren en flexbox. Hamburgermenu krijgen we nog bijles in. Beter ordenen, dus articles in een section plaatsen.
 
 
 
