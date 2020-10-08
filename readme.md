@@ -24,7 +24,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Goed: ik heb een carousal toegevoegd en de website meer responsive gemaakt door de kolommen naast elkaar te zetten op desktop version. Daarnaast is het mij ook gelukt om een hamburger-menu te laten veranderen in een menu-balk als de website groter wordt.
+Slecht: het importeren van een font lukt mij nog niet, net zoals andere kleine styling elementen zoals foto's positioneren. JS is wel gelukt maar er staan nog veel foutmeldingen in :(
+
+**Screenshot(s):**
+
+(images/voor3.png) (images/voor3-1.png) (images/voor3-2.png)
+
+### Agenda voor meeting
+
+css, js
+
+### Verslag van meeting
+
 
 
 
@@ -38,13 +52,14 @@ Deze weken niet veel tijd er aan kunnen besteden wegens drukte en ziekte, er moe
 
 **Screenshot(s):**
 
-(images/img0443.png) (images/img0444.png) (images/img0445.png)
+(images/voortgang2-1.png) (images/voortgang2-2.png) (images/voortgang2-3.png) (images/voortgang2-4.png)
 
 ### Agenda voor meeting
 
 css, flexbox, responsive maken
 
 ### Verslag van meeting
+Kijken naar elementen die ik in de website kan gebruiken, zoals een carousal of een menu-balk die naar beneden gaat. Er moet nog wel veel gebeuren omdat ik een week stil heb gezeten. 
 
 
 
