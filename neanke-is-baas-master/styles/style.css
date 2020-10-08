@@ -1,0 +1,370 @@
+/* CSS Document */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: beige;
+}
+
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 5s slider infinite alternate-reverse;
+
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75%c {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+
+    background: white;
+    z-index: 2;
+
+    transition: all .3s;
+    top: -100%;
+}
+
+.mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+}
+
+.close-menu {
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-menu:hover {
+    color: pink;
+}
+
+div {
+    left: 2em;
+    right: 2em;
+    top: 2em;
+    bottom: 2em;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: white;
+}
+
+header img {
+    align-self:center;
+    margin: 1em;
+    width: 50%;
+}
+
+hr {
+    border-style: solid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: green;
+}
+
+
+main {
+    padding: 1em;
+    background-color: white;
+}
+
+footer {
+    padding: 1em;
+    background-color: white;
+    margin-bottom: 3em;
+}
+
+footer article {
+    border-style: none;
+}
+
+footer p {
+    text-align: left;
+}
+
+nav {}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: block;
+    margin: auto;
+    padding: 0.2em;
+    text-transform: uppercase;
+}
+
+a {
+color: green;
+ text-decoration:none;
+}
+
+
+a:visited {
+  color:pink;
+}
+
+
+a:focus { 
+  background:pink;
+  text-decoration:underline;
+}
+
+a:hover {
+  color:pink;
+}
+
+a:active {
+  color:orange; 
+}
+
+
+img {
+    width: 100%;
+}
+
+.phone {
+    position: relative;
+    width: 3em;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 0 15px;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+.menu-icon:hover {
+    background: lightgrey;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: grey;
+}
+
+.menu {
+    position: relative;
+    width: 6em;
+}
+
+section {
+    margin-top:3em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    border-style: solid;
+    border-color: pink;
+    padding: 1em;
+}
+
+main {
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    margin: 2em;
+}
+
+h3 {
+    text-align: center;
+    color: green;
+}
+
+p {
+    text-align: center;
+    color: green;
+}
+
+.welkom hr {
+    border-style:none;
+}
+
+button {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 1em;
+
+}
+
+.insta {
+        border-bottom: 0.15em dotted pink;
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 5px;
+
+}
+
+.row img {
+    width: 20%;
+    padding-right: 5px;
+}
+
+.row img:last-of-type {
+    padding: 0;
+    
+}
+
+@media screen and (min-width: 770px) {
+    .cards {
+        display: flex;
+    }
+    
+    article {
+        width:33em;
+    }
+    
+    article:first-of-type {
+    margin-right: 1em;
+}
+
+article:last-of-type {
+    margin-left: 1em;
+}
+    #welkom {
+        display: flex;
+        justify-content: flex-end;
+        width: 20em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .komlangs {
+        display:flex;
+    }
+    
+    
+    .welkom p {
+        margin-left: 9em;
+        margin-right:9em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+    
+    footer {
+        display: flex;
+    }
+}
+
+
