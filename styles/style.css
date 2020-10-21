@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Biko';
+  src: url('https://www.dafont.com/biko.font');
+}
+
 body {
     width: 80%;
     margin: 0 auto;
@@ -16,11 +21,21 @@ body {
     background-size: cover;
     background-position: center;
     background-color: beige;
+    font-family: 'Biko', light-restricted, sans-serif;
+}
+
+
+
+
+.wittebody {
+    box-shadow: 0 6px 20px 0 grey;
+    background-color: white;
 }
 
 
 #slider {
     overflow: hidden;
+    z-index: 1;
 }
 
 #slider figure {
@@ -28,7 +43,7 @@ body {
     width: 500%;
     margin: 0;
     left: 0;
-    animation: 5s slider infinite alternate-reverse;
+    animation: 10s slider infinite alternate-reverse;
 
 }
 
@@ -89,12 +104,13 @@ body {
 .menu-icon {
     display: flex;
     justify-content: flex-end;
+    margin: 1em 0em 1em 1em;
 }
 
 .mobile-menu ul {
     display: flex;
     flex-direction: column;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .close-menu {
@@ -125,19 +141,28 @@ header {
     margin-top: 3em;
     padding: 1em;
     background-color: white;
+    border-radius: 4px 4px 1px 1px;    
+
 }
 
+@media screen and (min-width: 770px) {
+    header {
+        position: sticky;
+        top: -90px;
+        z-index: 100;        
+    }
+}    
+
 header img {
-    align-self:center;
+    align-self: center;
     margin: 1em;
-    width: 50%;
+    width: 100%;
 }
 
 hr {
     border-style: solid;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.2em;
     border-color: green;
 }
 
@@ -151,53 +176,76 @@ footer {
     padding: 1em;
     background-color: white;
     margin-bottom: 3em;
+    border-radius: 1px 1px 4px 4px;
 }
 
 footer article {
     border-style: none;
 }
 
-footer p {
-    text-align: left;
+#footerh2 {
+    margin: 0;
+    padding: 0;
 }
+
+footer ul {
+    display: grid
+}
+
+footer li {
+    color: green;
+    text-transform: none;
+    text-align: left;
+    cursor: none;
+}
+
 
 nav {}
 
-ul {
+.flex {
     display: flex;
 }
 
 li {
     display: block;
-    margin: auto;
-    padding: 0.2em;
+    margin: 0.5em;
+    padding-right:1em;
     text-transform: uppercase;
+    cursor: pointer;
+    color: green;
 }
 
-a {
-color: green;
- text-decoration:none;
-}
-
-
-a:visited {
-  color:pink;
+li a {
+    color: inherit;
+    text-decoration: none;
 }
 
 
-a:focus { 
-  background:pink;
-  text-decoration:underline;
+button a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+a:focus {
+    background: blue;
+/*    text-decoration: underline;*/
 }
 
 a:hover {
-  color:pink;
+    color: pink;
 }
 
-a:active {
-  color:orange; 
+a:visited {
+    color: inherit;
 }
 
+.current_page a {
+    color: pink;
+}
 
 img {
     width: 100%;
@@ -235,6 +283,7 @@ img {
     width: 100%;
     height: 1px;
     background: grey;
+    color:green;
 }
 
 .menu {
@@ -243,7 +292,7 @@ img {
 }
 
 section {
-    margin-top:3em;
+    margin-top: 3em;
 }
 
 article {
@@ -256,12 +305,16 @@ article {
     padding: 1em;
 }
 
-main {
-}
+main {}
 
 h1 {
     text-align: center;
     color: green;
+}
+
+#contactpagina {
+    border-bottom: 0.15em dotted pink;
+    padding: 1em;
 }
 
 h2 {
@@ -280,8 +333,9 @@ p {
     color: green;
 }
 
-.welkom hr {
-    border-style:none;
+.welkom p {
+    border-style: none;
+    padding-bottom: 1em;
 }
 
 button {
@@ -293,10 +347,7 @@ button {
 
 }
 
-.insta {
-        border-bottom: 0.15em dotted pink;
-    padding: 1em;
-}
+.insta {}
 
 .row {
     display: flex;
@@ -306,12 +357,38 @@ button {
 
 .row img {
     width: 20%;
+    object-fit: cover;
     padding-right: 5px;
 }
 
 .row img:last-of-type {
     padding: 0;
-    
+
+}
+
+.form {
+    margin: 0 0 0 auto;
+    border: none;
+    padding: none;
+}
+
+input {
+    padding: 1.2em 5em;
+    border: none;
+    background-color: darkseagreen;
+    margin-bottom: 1em;
+}
+
+input.active {
+    border-color: blue;
+}
+
+label {
+    color: green;
+}
+
+#googleMap {
+    margin-left: 1em;
 }
 
 @media screen and (min-width: 770px) {
@@ -319,33 +396,62 @@ button {
         display: flex;
     }
     
-    article {
-        width:33em;
+    .card {
+        width: 50%;
+        overflow: hidden;
+        border: none;
     }
-    
-    article:first-of-type {
-    margin-right: 1em;
-}
 
-article:last-of-type {
-    margin-left: 1em;
-}
+    article {
+        width: 33em;
+    }
+
+    article:first-of-type {
+        margin-right: 1em;
+    }
+
+    article:last-of-type {
+        margin-left: 1em;
+    }
+
+    .contactarticle {
+        width: auto;
+        border: none;
+    }
+
+    .contactarticle p {
+        text-align: left;
+    }
+
+    .contactarticle h1 {
+        text-align: left;
+    }
+    
+
+    .article-info {
+        border: none;
+        align-items: left;
+        margin: 0;
+        padding: 0;
+    }
+
     #welkom {
-        display: flex;
-        justify-content: flex-end;
-        width: 20em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        width: 30%;
+        margin: 0 0 0 auto;
     }
-    
+
     .komlangs {
-        display:flex;
+        display: flex;
     }
-    
-    
+
+    .komlangs h2 {
+        margin: 0 0 0 auto;
+    }
+
+
     .welkom p {
         margin-left: 9em;
-        margin-right:9em;
+        margin-right: 9em;
         margin-top: 1em;
         margin-bottom: 1em;
     }
@@ -354,17 +460,37 @@ article:last-of-type {
         display: none;
     }
 
+
     .desktop {
         display: block;
+    }
+    
+    .desktop ul {
+        justify-content: center;
     }
 
     .mobile-menu {
         display: none;
     }
-    
+
     footer {
         display: flex;
+        border-top: 0.15em dotted pink;
+        padding: 1em;
+        margin: 1em;
+
     }
+
+    header img {
+        align-self: center;
+        margin: 1em;
+        width: 35%;
+    }
+
+    .row img {
+        width: 20%;
+        height: 13em;
+        padding-right: 5px;
+    }
+
 }
-
-

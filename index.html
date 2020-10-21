@@ -13,20 +13,22 @@
 </head>
 
 <body>
-    <div>
+   <div class="wittebody">
+   
+    <nav>
         <div class="mobile-menu" id="mobile-menu">
             <div class="close-menu" id="close-button">X</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a>Menus</a></li>
+                <li class="current_page" ><a href="index.html">Home</a></li>
+                <li><a href="#">Menus</a></li>
                 <li><a href="pagetwo.html">Groepen</a></li>
-                <li><a>Borrels</a></li>
-                <li><a>Impressie</a></li>
-                <li><a>Contact</a></li>
-                <li><a>Vacatures</a></li>
+                <li><a href="#">Borrels</a></li>
+                <li><a href="#">Impressie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Vacatures</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
     <header>
         <img src="images/logo-bar-botanique-horizontal.png">
         <hr>
@@ -44,17 +46,17 @@
             <!--                <img src="images/menu.png" class="menu" id="open-button">-->
         </div>
 
-        <div class="desktop">
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="desktop">
+            <ul class="flex">
+                <li class="current_page" ><a href="index.html">Home</a></li>
                 <li><a>Menus</a></li>
                 <li><a href="pagetwo.html">Groepen</a></li>
                 <li><a>Borrels</a></li>
                 <li><a>Impressie</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a>Vacatures</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <!-- bron: https://www.youtube.com/watch?v=pGHOaY4dhAA -->
@@ -73,39 +75,37 @@
                 <img src="images/ontbijt-lunch-diner-and-borrel-400x266.jpg">
                 <h3>Manger chez nous!</h3>
                 <p>Wij zijn elke dag geopend vanaf 9:00 voor een heerlijk ontbijtje, lunch, borrel en diner!</p>
-                <button>Bekijk menukaarten</button>
+                <button><a>Bekijk menukaarten</a></button>
             </article>
 
             <article>
                 <img src="images/groepen-400x266.jpg">
                 <h3>Groepen</h3>
                 <p>Wil je voor een verjaardag, werkuitje of gewoon voor de gezelligheid met een groep bij ons komen eten of borrelen? Dat kan! Het is misschien iets anders dan normaal, maar zeker niet minder gezellig! Neem contact op voor de mogelijkheden.</p>
-                <button>Meer info opvragen</button>
+                <button><a href="pagetwo.html">Meer info opvragen</a></button>
             </article>
 
             <article>
                 <img src="images/giftcard-400x266.png">
                 <h3>Giftcard</h3>
                 <p>WIemand verrassen met een gezellig bezoek aan Bar Botanique? Je kunt bij ons een giftcard aan de bar halen of laten bezorgen door deze via de mail te bestellen.</p>
-                <button>Contact opnemen</button>
+                <button><a>Contact opnemen</a></button>
             </article>
         </section>
         <section class="welkom">
             <h2>Bar Botanique - Café Tropique</h2>
             <p>Welkom bij Bar Botanique; de groene oase in de Eerste van Swindenstraat in het altijd levendige Amsterdam Oost. Kom na een bezoekje aan de Dappermarkt of Oosterpark langs voor een culinaire expeditie in onze Café Tropique!
             </p>
-            <hr>
             <p>
                 Bijkletsen met de buren onder het genot van een kop koffie, uitgebreid lunchen met vrienden, sfeervol dineren met je lief, salsa dansen op vrijdagavond en gezellig borrelen: het kan allemaal. Met een prachtige vide, die overigens ook privé afgehuurd kan worden, en een breed groepsmenu-arrangement vinden we altijd een mogelijkheid voor het organiseren van o.a. verjaardagen, vergaderingen en groepsdiners.</p>
-            <hr>
             <p>
                 Bar Botanique is gevestigd in een pand met een rijke geschiedenis. Waar zich eerst de gymzaal voor de leerlingen van basisschool De Commelinschool vestigde, sierde later het populaire Café de Ponteneur op de hoek van de straat. Vandaag de dag zetten wij met alle plezier het imago van huiskamercafé van de buurt voort, maar deze keer in onze eigen stijl. Namelijk in style tropical! A bientôt!</p>
         </section>
-        <section class="komlangs">
-          <h2 id="komlangs">Kom vooral langs!</h2>
-           <img src="images/komlangs.png" id="welkom">
-            
-            
+        <section>
+            <div class="komlangs">
+                <h2>Kom vooral langs!</h2>
+                <img src="images/komlangs.png" id="welkom">
+            </div>
         </section>
         <section class="insta">
             <p>#BarBotaniqueAmsterdam on Instagram</p>
@@ -127,24 +127,32 @@
 
     </main>
     <footer>
-       <article>
-        <p>Bar Botanique Eerste van swindenstraat 581</p>
-        <p> 1093 LC Amsterdam </p>
-        <p>+31 (0)20 3586 553</p>
-        <p> info@barbotanique.nl </p>
-        <p>reserveren@barbotanique.nl</p>
-</article>
-  <article>
-        <p>Disclaimer</p>
-        <p>Sitemap </p>
-        <p>Vacatures</p>
-</article>
-  <article>
-        <p>Netherlands</p>
-        <p>Englisch</p>
-</article>
-   
+        <article>
+           <h2 id="footerh2">Bar Botanique</h2>
+            <ul>
+                <li>Eerste van swindenstraat 581</li>
+                <li>1093 LC Amsterdam </li>
+                <li><a href="#">+31 (0)20 3586 553</a></li>
+                <li><a href="#">info@barbotanique.nl</a></li>
+                <li><a href="#">reserveren@barbotanique.nl</a></li>
+            </ul>
+        </article>
+        <article>
+            <ul>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Vacatures</a></li>
+            </ul>
+        </article>
+        <article>
+            <ul>
+                <li>Netherlands</li>
+                <li>English</li>
+            </ul>
+        </article>
+
     </footer>
+    </div>
     <script src="scripts/script.js"></script>
     <script src="./script.js"></script>
 </body>
