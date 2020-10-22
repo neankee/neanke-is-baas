@@ -6,10 +6,20 @@
     box-sizing: border-box;
 }
 
+/* Hier voeg ik een lettertype toe */
+
+/* Dit gaf een error in de browser, ik heb de error gegoogled, maar het leek iets 
+te maken te hebben met http of https. Doordat het font wel wordt ingeladen heb ik 
+er voor nu voor gekozen om dit even achterwege laten */
+
+/* https://css-tricks.com/snippets/css/using-font-face/ */
+
 @font-face {
-  font-family: 'Biko';
-  src: url('https://www.dafont.com/biko.font');
+    font-family: "Biko";
+    src: url("https://www.dafont.com/biko.font");
 }
+
+/* Hier is de roze achtergrond gestyled */
 
 body {
     width: 80%;
@@ -21,22 +31,39 @@ body {
     background-size: cover;
     background-position: center;
     background-color: beige;
-    font-family: 'Biko', light-restricted, sans-serif;
+    font-family: "Biko", light-restricted, sans-serif;
 }
-
-
-
 
 .wittebody {
     box-shadow: 0 6px 20px 0 grey;
     background-color: white;
 }
 
+#top {
+    visibility: hidden;
+}
+
+#backToTop {
+    font-size: 1em;
+    background-color: #c4c4c4;
+}
+
+/* code voor de slider met foto's */
+
+/* z-index is net als een stapelpapiertjes, nu ligt ie onderaan */
 
 #slider {
     overflow: hidden;
     z-index: 1;
+    border: 2px solid;
+    border-color: green;
 }
+
+/* de figure is 500% breed zodat de vier foto's in worden verschoven */
+
+/* de animatie is dat de foto's worden verschoven in 6 seconden */
+
+/* infinite alternate reverse betekent dat die weer terug gaat naar de eerste foto */
 
 #slider figure {
     position: relative;
@@ -44,13 +71,24 @@ body {
     margin: 0;
     left: 0;
     animation: 10s slider infinite alternate-reverse;
-
 }
+
+/* styling voor de foto's */
 
 #slider figure img {
     width: 20%;
     float: left;
 }
+
+/* bron: https://www.modernways.be/myap/it/page/programming/css/transition%20and%20animation/CSS%20keyframes%20maken.html#:~:text=CSS3%20keyframes%20zijn%20krachtige%20regels,%22100%25%22%20het%20einde. */
+
+/* met een keyframe bepaal je een css-stijl tijdens een tijdsschema */
+
+/* 0% is het begin, 100% is het einde */
+
+/* de foto staat op 0% en laat de hele foto zien */
+
+/* de foto staat op 100% en de foto staat nu buiten het zicht op -300% van de figure width */
 
 @keyframes slider {
     0% {
@@ -71,7 +109,7 @@ body {
     70% {
         left: -200%;
     }
-    75%c {
+    75% {
         left: -300%;
     }
     95% {
@@ -81,6 +119,14 @@ body {
         left: -300%;
     }
 }
+
+/* Deze code is geschreven met hulp van Dennis Wegereef */
+
+/* dit is de navigatie balk op mobile */
+
+/* de navigatiebalk staat nu -100% boven de pagina */
+
+/* wanneer je er op klikt (js) dan klapt hij in 3s naar beneden*/
 
 .mobile-menu {
     position: fixed;
@@ -92,14 +138,20 @@ body {
     background: white;
     z-index: 2;
 
-    transition: all .3s;
+    transition: all 0.3s;
     top: -100%;
 }
+
+/* icoontje voor het telefoontje */
 
 .mobile {
     display: flex;
     justify-content: flex-end;
 }
+
+/* icoontje voor de menubutton */
+
+/* door flex-end staat hij helemaal links uitgelijnd */
 
 .menu-icon {
     display: flex;
@@ -107,11 +159,15 @@ body {
     margin: 1em 0em 1em 1em;
 }
 
+/* styling lijstje menu mobile */
+
 .mobile-menu ul {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
+
+/* styling kruisje in navigatiebalk mobile*/
 
 .close-menu {
     padding-top: 15px;
@@ -119,16 +175,38 @@ body {
     cursor: pointer;
 }
 
+/* het kruisje wordt roze wanneer je met de muis erover heen gaat */
+
 .close-menu:hover {
     color: pink;
 }
 
-div {
-    left: 2em;
-    right: 2em;
-    top: 2em;
-    bottom: 2em;
+/* relative positioneert naar hoe die wordt geschaalt */
+
+.phone {
+    position: relative;
+    width: 3em;
 }
+
+/* styling icon van menu mobile */
+
+/* transition hij gaat in 3sec weg wanneer je er op klikt */
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid green;
+    padding: 0 15px;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.menu-icon:hover {
+    background: lightgrey;
+}
+
+/* de navigatiebalk voor desktop zie je nu niet omdat je op mobile zit */
 
 .desktop {
     display: none;
@@ -141,23 +219,16 @@ header {
     margin-top: 3em;
     padding: 1em;
     background-color: white;
-    border-radius: 4px 4px 1px 1px;    
-
+    border-radius: 4px 4px 1px 1px;
 }
-
-@media screen and (min-width: 770px) {
-    header {
-        position: sticky;
-        top: -90px;
-        z-index: 100;        
-    }
-}    
 
 header img {
     align-self: center;
     margin: 1em;
     width: 100%;
 }
+
+/* hr kun je het beste gebruiken om er een lijn mee te stijlen */
 
 hr {
     border-style: solid;
@@ -166,11 +237,12 @@ hr {
     border-color: green;
 }
 
-
 main {
     padding: 1em;
     background-color: white;
 }
+
+/* hier komt de styling voor de footer op mobile */
 
 footer {
     padding: 1em;
@@ -183,13 +255,13 @@ footer article {
     border-style: none;
 }
 
-#footerh2 {
+.footerh2 {
     margin: 0;
     padding: 0;
 }
 
 footer ul {
-    display: grid
+    display: grid;
 }
 
 footer li {
@@ -199,8 +271,7 @@ footer li {
     cursor: none;
 }
 
-
-nav {}
+/* navigatiebalk desktop is nu flex */
 
 .flex {
     display: flex;
@@ -209,65 +280,47 @@ nav {}
 li {
     display: block;
     margin: 0.5em;
-    padding-right:1em;
+    padding-right: 1em;
     text-transform: uppercase;
     cursor: pointer;
     color: green;
 }
+
+/* styling a's voor toegankelijkheid */
 
 li a {
     color: inherit;
     text-decoration: none;
 }
 
-
-button a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
 a:focus {
-    background: blue;
-/*    text-decoration: underline;*/
+    background: pink;
 }
 
 a:hover {
     color: pink;
 }
 
-a:visited {
-    color: inherit;
-}
+/* Voor als de linkjes paars blijven */
+
+/* a:visited */
 
 .current_page a {
     color: pink;
 }
 
+.button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: green;
+}
+
 img {
     width: 100%;
-}
-
-.phone {
-    position: relative;
-    width: 3em;
-}
-
-.menu-icon {
-    display: flex;
-    align-items: center;
-    border: 1px solid grey;
-    padding: 0 15px;
-    cursor: pointer;
-
-    transition: all .3s;
-}
-
-.menu-icon:hover {
-    background: lightgrey;
 }
 
 .icon {
@@ -283,7 +336,7 @@ img {
     width: 100%;
     height: 1px;
     background: grey;
-    color:green;
+    border: 1px solid green;
 }
 
 .menu {
@@ -295,17 +348,22 @@ section {
     margin-top: 3em;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
+/* styling drie kolommen p1 */
+
+.kolom {
+    border: 2px;
     border-style: solid;
     border-color: pink;
     padding: 1em;
 }
 
-main {}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 1em;
+    padding: 1em;
+}
 
 h1 {
     text-align: center;
@@ -315,6 +373,7 @@ h1 {
 #contactpagina {
     border-bottom: 0.15em dotted pink;
     padding: 1em;
+    text-align: left;
 }
 
 h2 {
@@ -338,21 +397,11 @@ p {
     padding-bottom: 1em;
 }
 
-button {
-    background-color: pink;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin: 1em;
-
-}
-
-.insta {}
+/* styling voor insta foto's */
 
 .row {
     display: flex;
     margin-bottom: 5px;
-
 }
 
 .row img {
@@ -363,11 +412,12 @@ button {
 
 .row img:last-of-type {
     padding: 0;
-
 }
 
+/* styling formulier */
+
 .form {
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     border: none;
     padding: none;
 }
@@ -377,6 +427,7 @@ input {
     border: none;
     background-color: darkseagreen;
     margin-bottom: 1em;
+    color: green;
 }
 
 input.active {
@@ -387,25 +438,65 @@ label {
     color: green;
 }
 
+
 #googleMap {
     margin-left: 1em;
 }
 
+/* styling alle buttons */
+
+.button {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 1em;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.logo {
+    align-self: center;
+}
+
 @media screen and (min-width: 770px) {
+    /* de header blijf vastplakken wanneer je scrollt */
+    header {
+        position: sticky;
+        top: -90px;
+        /* header schuift naar boven om de logo niet te zien*/
+        z-index: 100;
+        /* header staat nu boven op alle items */
+    }
+
     .cards {
         display: flex;
     }
-    
+
+    .backToTop {
+        font-size: 2em;
+    }
+
     .card {
         width: 50%;
         overflow: hidden;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Pakt het direct child (form) van .card */
+    .card > form {
+        margin: auto;
     }
 
     article {
-        width: 33em;
+        width: 33%;
+        border: none;
     }
 
+    /* ruimte tussen de wittebody */
     article:first-of-type {
         margin-right: 1em;
     }
@@ -416,7 +507,10 @@ label {
 
     .contactarticle {
         width: auto;
-        border: none;
+    }
+
+    .contactarticle {
+        margin-left: 0rem;
     }
 
     .contactarticle p {
@@ -426,7 +520,6 @@ label {
     .contactarticle h1 {
         text-align: left;
     }
-    
 
     .article-info {
         border: none;
@@ -448,7 +541,6 @@ label {
         margin: 0 0 0 auto;
     }
 
-
     .welkom p {
         margin-left: 9em;
         margin-right: 9em;
@@ -460,13 +552,17 @@ label {
         display: none;
     }
 
-
     .desktop {
         display: block;
     }
-    
+
     .desktop ul {
         justify-content: center;
+    }
+
+    .desktop li {
+        justify-content: center;
+        margin: 0.05em;
     }
 
     .mobile-menu {
@@ -478,7 +574,6 @@ label {
         border-top: 0.15em dotted pink;
         padding: 1em;
         margin: 1em;
-
     }
 
     header img {
@@ -489,8 +584,33 @@ label {
 
     .row img {
         width: 20%;
-        height: 13em;
+        max-height: 20%;
+        object-fit: cover;
         padding-right: 5px;
     }
+}
 
+/* styling insta schalen */
+
+@media screen and (min-width: 900px) {
+    .row img {
+        width: 20%;
+        object-fit: cover;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        position: sticky;
+        top: -110px;
+        z-index: 100;
+    }
+
+    .row img {
+        width: 20%;
+        max-height: 14rem;
+        object-fit: cover;
+        padding-right: 5px;
+    }
 }

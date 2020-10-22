@@ -4,77 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Neanke Veenstra">
-    <meta name="description" content="This is a website for a website">
+    <meta name="description" content="This is a website Bar Botanique">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Restaurant</title>
+    <title>Bar Botanique Contact</title>
 
     <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wittebody">
-        <nav>
-            <div class="mobile-menu" id="mobile-menu">
-                <div class="close-menu" id="close-button">X</div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Menus</a></li>
-                    <li><a href="pagetwo.html">Groepen</a></li>
-                    <li><a href="#">Borrels</a></li>
-                    <li><a href="#">Impressie</a></li>
-                    <li class="current_page" ><a href="#">Contact</a></li>
-                    <li><a href="#">Vacatures</a></li>
-                </ul>
-            </div>
-        </nav>
-        <header>
-            <img src="images/logo-bar-botanique-horizontal.png">
-            <hr>
-            <hr>
-            <div class="mobile">
-                <a><img src="images/phone.png" class="phone"></a>
-                <div class="menu-icon" id="open-button">
-                    <div class="icon">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                    MENU
+    <!--button, onzichtbaar, waar de button naar toe scrollt-->
+    <a name='top' id="top">Back to Top</a>
+    <div>
+        <!--Dit is de witte achtergrond over de gehele pagina-->
+        <div class="wittebody">
+            <!--Dit is de navigatiebalk wanneer je op mobileversion zit, wanneer je op het hamburgermenu klikt, klapt de navigatiebalk naar beneden. Hier maak ik gebruik van css en js -->
+            <!--Bron: deze code is geschreven met hulp van Dennis Wegereef-->
+            <nav>
+                <div class="mobile-menu" id="mobile-menu">
+                    <!--navigatie mobile-->
+                    <div class="close-menu" id="close-button">X</div>
+                    <!--knop om mee te sluiten-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Menus</a></li>
+                        <li><a href="pagetwo.html">Groepen</a></li>
+                        <li><a href="#">Borrels</a></li>
+                        <li><a href="#">Impressie</a></li>
+                        <li class="current_page"><a href="#">Contact</a></li>
+                        <li><a href="#">Vacatures</a></li>
+                    </ul>
                 </div>
-                <!--                <img src="images/menu.png" class="menu" id="open-button">-->
-            </div>
-
-            <nav class="desktop">
-                <ul class="flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a>Menus</a></li>
-                    <li><a href="pagetwo.html">Groepen</a></li>
-                    <li><a>Borrels</a></li>
-                    <li><a>Impressie</a></li>
-                    <li class="current_page" ><a>Contact</a></li>
-                    <li><a>Vacatures</a></li>
-                </ul>
             </nav>
-        </header>
-        <main>
-            <div>
+            <header>
+                <img alt="logo" src="images/logo-bar-botanique-horizontal.png">
+                <hr>
+                <hr>
+                <div class="mobile">
+                    <!-- navigatiebalk op mobile-->
+                    <a><img alt="icon phone" src="images/phone.png" class="phone"></a>
+                    <!--styling van de menu-button -->
+                    <div class="menu-icon" id="open-button">
+                        <div class="icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <p>MENU</p>
+                    </div>
+                </div>
+                <!--Navigatiebalk op desktop-->
+                <nav class="desktop">
+                    <!--Wanneer de website breder wordt, verschijnt de menubalk onder het logo -->
+                    <ul class="flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a>Menus</a></li>
+                        <li><a href="pagetwo.html">Groepen</a></li>
+                        <li><a>Borrels</a></li>
+                        <li><a>Impressie</a></li>
+                        <li class="current_page"><a>Contact</a></li>
+                        <li><a>Vacatures</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
                 <!-- bron: https://www.youtube.com/watch?v=pGHOaY4dhAA -->
+                <!--Hier zie je een figure met foto's, om de zoveel seconden verschijnt er een andere foto. Hier maak ik gebruik van een animation en keyframes-->
                 <div id="slider">
                     <figure>
-                        <img src="images/home_7.jpg">
-                        <img src="images/slider2.jpg">
-                        <img src="images/slider3.jpg">
-                        <img src="images/home_7.jpg">
+                        <img alt="barkruk" src="images/contact1.jpg">
+                        <img alt="restaurant" src="images/contact2.jpg">
+                        <img alt="twee mensen dineren" src="images/slider3.jpg">
+                        <img alt="terras" src="images/contact3.jpg">
                     </figure>
                 </div>
-
+                <!-- Hier staat een leuke tekst -->
                 <section>
                     <article class="contactarticle">
                         <h1 id="contactpagina">Contact</h1>
                         <p>Bar Botanique Bar Botanqiue ligt in de Dapperbuurt in Amsterdam Oost, in het midden tussen de Indischebuurt en de Linnaeusstraat, met de dappermarkt om de hoek. Het is een levendige buurt waar het dag en nacht bedrijvig is. Uiteraard is er ruimte genoeg om je fiets te parkeren, maar ook met het openbaar vervoer en de auto is Bar Botanique prima bereikbaar. Tram 14 stopt bij halte Pontanusstraat, om de hoek van Bar Botanique en tram 19 stopt bij halte Eerste van Swindenstraat, vanaf daar is het 5 minuten wandelen. Met de auto is Bar Botanique prima bereikbaar. Vanaf de IJ-tunnel is het slechts 2km en de Piet Hein-tunnel is nog dichterbij. In de Dapperbuurt is altijd wel ruimte om te parkeren. </p>
 
                     </article>
+                    <!-- Contact details -->
                     <article class="contactarticle">
                         <ul>
                             <li>Eerste van swindenstraat 581</li>
@@ -85,13 +96,17 @@
                     </article>
                 </section>
                 <section class="cards">
-                   <div class="card" id="googleMap">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.3851916124536!2d4.928158415695945!3d52.363435179784815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609731dc8c8c7%3A0x13e6f7440af77a6d!2sBar%20Botanique!5e0!3m2!1snl!2snl!4v1603279305471!5m2!1snl!2snl" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                   </div>
-                    <article class="card" class="form">
+                    <!-- Hier heb ik een iFrame van google maps toegevoegd, de code is van google maps gekopieerd om de precieze locatie op de map te laten zien. Maar waarom maak ik gebruik van een iFrame? Een iFrame kan handig zijn wanneer Google iets aan de maps aanpast, dit ook gelijk op de website wordt toegepast. -->
+                    <!-- Bron https://www.youtube.com/watch?v=KIC0OK9nKXY-->
+                    <div class="card" id="googleMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.3851916124536!2d4.928158415695945!3d52.363435179784815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609731dc8c8c7%3A0x13e6f7440af77a6d!2sBar%20Botanique!5e0!3m2!1snl!2snl!4v1603279305471!5m2!1snl!2snl" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <!-- Een formulier om je gegevens achter te laten en om een bericht te sturen. -->
+                    <!-- Bron: https://www.w3schools.com/html/html_forms.asp-->
+                    <article class="card">
                         <h1>Stel je vraag</h1>
                         <p>Wij antwoorden snel</p>
-                        <form>
+                        <form class="form">
                             <label for="name">Naam</label><br>
                             <input type="text" id="name" name="name" value=""><br>
                             <label for="email">E-mailadres</label><br>
@@ -101,37 +116,43 @@
                             <label for="bericht">Je bericht</label><br>
                             <input type="text" id="bericht" name="bericht" value="">
                         </form>
-                        <button><a>Versturen</a></button>
+                        <a href='/contact.html' class="button">Versturen</a>
                     </article>
                 </section>
-        </main>
-        <footer>
-            <article>
-                <h2 id="footerh2">Bar Botanique</h2>
-                <ul>
-                    <li>Eerste van swindenstraat 581</li>
-                    <li>1093 LC Amsterdam </li>
-                    <li><a href="#">+31 (0)20 3586 553</a></li>
-                    <li><a href="#">info@barbotanique.nl</a></li>
-                    <li><a href="#">reserveren@barbotanique.nl</a></li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">Vacatures</a></li>
-                </ul>
-            </article>
-            <article>
-                <ul>
-                    <li>Netherlands</li>
-                    <li>English</li>
-                </ul>
-            </article>
-        </footer>
+            </main>
+            <!-- Footer met informatie contactgegevens -->
+            <footer>
+                <article>
+                    <h2 class="footerh2">Bar Botanique</h2>
+                    <ul>
+                        <li>Eerste van swindenstraat 581</li>
+                        <li>1093 LC Amsterdam </li>
+                        <li><a href="#">+31 (0)20 3586 553</a></li>
+                        <li><a href="#">info@barbotanique.nl</a></li>
+                        <li><a href="#">reserveren@barbotanique.nl</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Vacatures</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul>
+                        <li>Netherlands</li>
+                        <li>English</li>
+                    </ul>
+                </article>
+                <!--button, scrollt naar boven-->
+                <a href='#top' onClick='backToTop()' class="button" id="backToTop">↑</a>
+            </footer>
+
+        </div>
         <script src="scripts/script.js"></script>
         <script src="./script.js"></script>
+    </div>
 </body>
 
 </html>

@@ -1,24 +1,32 @@
 # Procesverslag
-**Auteur:** -Neanke Veenstra-
+**Auteur:** Neanke Veenstra
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. slider: https://www.youtube.com/watch?v=pGHOaY4dhAA
+2. google maps: https://www.youtube.com/watch?v=KIC0OK9nKXY
+3. formulier: https://www.w3schools.com/html/html_forms.asp
+4. menubalk: Dennis Wegereef
+5. back-to-topbutton: Simone van Zeijl van simonevanzeijl.com
+6. back-to-topbutton: https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+7. fonts: https://css-tricks.com/snippets/css/using-font-face/
+8. hr: https://www.w3schools.com/tags/tag_hr.asp
+9. flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Goed: Het toevoegen van de content ging super snel en makkelijk, de styling in css ging ook beter dan verwacht. Daarnaast lukte het mij ook beter om bepaalde elementen op google te zoeken en de uitleg te begrijpen. Zoals het toevoegen van een slider en een google maps.
+Lastig: Ik had af en toe nog wel problemen met het schalen van elementen wanneer het responsive werd. Javascript blijft natuurlijk ook lastig maar hierbij heb ik hulp gezocht waardoor het wel sneller lukte. Uiteindelijk was ik meer tijd kwijt aan de styling.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+(images/eind1.png) (images/eind2.png) (images/eind3.png)(images/eind4.png) (images/eind5.png) (images/eind6.png)
 
 
 
@@ -38,7 +46,7 @@ Slecht: het importeren van een font lukt mij nog niet, net zoals andere kleine s
 css, js
 
 ### Verslag van meeting
-
+Al op de goede weg, nog aandachtspuntjes voor toegankelijheid, margins en het schalen van afbeeldingen. 
 
 
 
@@ -52,7 +60,7 @@ Deze weken niet veel tijd er aan kunnen besteden wegens drukte en ziekte, er moe
 
 **Screenshot(s):**
 
-(images/voortgang2-1.png) (images/voortgang2-2.png) (images/voortgang2-3.png) (images/voortgang2-4.png)
+(images/voortgang2-1.png)(images/voortgang2-2.png)(images/voortgang2-3.png) (images/voortgang2-4.png)
 
 ### Agenda voor meeting
 
@@ -74,7 +82,7 @@ Slecht: lay-out in css, repsonsive maken
 
 **Screenshot(s):**
 
-(images/img0443.png) (images/img0444.png) (images/img0445.png)
+(images/img0443.png)(images/img0444.png)(images/img0445.png)
 
 ### Agenda voor meeting
 
@@ -95,7 +103,8 @@ Website is responsive gemaakt. Nog uitvogelen met positioneren en flexbox. Hambu
 **Je opdracht:** https://www.barbotanique.nl/
 
 
-**Screenshot(s):** (images/img0438.png) (images/img0439.png) (images/img0440.png) (images/img0441.png)
+**Screenshot(s):** 
+(images/img0438.png)(images/img0439.png)(images/img0440.png)(images/img0441.png)
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
