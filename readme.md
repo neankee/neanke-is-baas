@@ -26,7 +26,7 @@ Lastig: Ik had af en toe nog wel problemen met het schalen van elementen wanneer
 
 **Screenshot(s):**
 
-!(images/eind1.png) (images/eind2.png) (images/eind3.png)(images/eind4.png) (images/eind5.png) (images/eind6.png)
+!(images/eind1.png)!(images/eind2.png)!(images/eind3.png)!(images/eind4.png)!(images/eind5.png)!(images/eind6.png)
 
 
 
@@ -39,7 +39,7 @@ Slecht: het importeren van een font lukt mij nog niet, net zoals andere kleine s
 
 **Screenshot(s):**
 
-!(images/voor3.png) (images/voor3-1.png) (images/voor3-2.png)
+!(images/voor3.png)!(images/voor3-1.png)!(images/voor3-2.png)
 
 ### Agenda voor meeting
 
@@ -60,7 +60,7 @@ Deze weken niet veel tijd er aan kunnen besteden wegens drukte en ziekte, er moe
 
 **Screenshot(s):**
 
-!(images/voortgang2-1.png)(images/voortgang2-2.png)(images/voortgang2-3.png) (images/voortgang2-4.png)
+!(images/voortgang2-1.png)!(images/voortgang2-2.png)!(images/voortgang2-3.png)!(images/voortgang2-4.png)
 
 ### Agenda voor meeting
 
@@ -82,7 +82,7 @@ Slecht: lay-out in css, repsonsive maken
 
 **Screenshot(s):**
 
-!(images/img0443.png)(images/img0444.png)(images/img0445.png)
+!(images/img0443.png)!(images/img0444.png)!(images/img0445.png)
 
 ### Agenda voor meeting
 
@@ -104,7 +104,7 @@ Website is responsive gemaakt. Nog uitvogelen met positioneren en flexbox. Hambu
 
 
 **Screenshot(s):** 
-(images/img0438.png)(images/img0439.png)(images/img0440.png)(images/img0441.png)
+!(images/img0438.png)!(images/img0439.png)!(images/img0440.png)!(images/img0441.png)
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
